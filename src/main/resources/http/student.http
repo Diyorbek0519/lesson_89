@@ -1,0 +1,51 @@
+### Create student
+POST localhost:8082/student/create
+Content-Type: application/json
+
+{
+  "name": "Vali",
+  "surname": "Valiyev",
+  "age": 18,
+  "phone": "12345"
+}
+
+
+### Create student all
+POST localhost:8082/student/create/all
+Content-Type: application/json
+
+[
+  {
+    "name": "Toshmat",
+    "surname": "Toshmatov",
+    "age": 32,
+    "phone": "33333"
+  },
+  {
+    "name": "Vali",
+    "surname": "Aliyev",
+    "age": 20,
+    "phone": "222222"
+  }
+]
+
+### Get all student
+GET localhost:8082/student/all
+
+### Get by phone
+GET localhost:8082/student/phone/12345
+
+### Get by id
+GET localhost:8082/student/7
+
+### Delete by id
+DELETE localhost:8082/student/dc68471c-4554-4ca7-a191-514a8660603a
+
+### Delete by id
+PUT localhost:8082/student/30ff40a6-6231-427c-bbcc-58da12db9884
+Content-Type: application/json
+
+{
+  "name": "Alijon",
+  "surname": "Aliyevhon"
+}
